@@ -21,7 +21,11 @@ contract TestTake is Test, IUnlockCallback {
     IPoolManager(poolmanager).unlock(data);
   }
 
-  function unlockCallback(bytes calldata data) external override returns (bytes memory) {
+  function unlockCallback(bytes calldata data)
+    external
+    override
+    returns (bytes memory)
+  {
     // same as ETH
     Currency currency = Currency.wrap(address(0));
     address to = address(this);
