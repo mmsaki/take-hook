@@ -1,0 +1,6 @@
+{
+	"name": "uv4 playground",
+	"devDependencies": {
+		"prettier-plugin-solidity": "^1.4.2"
+	}
+}
